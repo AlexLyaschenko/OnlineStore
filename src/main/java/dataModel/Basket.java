@@ -2,35 +2,25 @@ package dataModel;
 
 public class Basket {
     private int idBasket;
-    private int price;
-    private String productList;
+    private int idProduct;
 
-    public Basket (int idBasket, int price, String productList) {
+    public Basket (int idBasket, int idProduct) {
         this.idBasket = idBasket;
-        this.price = price;
-        this.productList = productList;
+        this.idProduct = idProduct;
     }
     public void setIdBasket(int idBasket) {
         this.idBasket = idBasket;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setProductList(String productList) {
-        this.productList = productList;
+    public void setIdProduct(int idProduct) {
+        this.idProduct = idProduct;
     }
 
     public int getIdBasket() {
         return idBasket;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public String getProductList() {
-        return productList;
+    public int getIdProduct() {
+        return idProduct;
     }
 }
